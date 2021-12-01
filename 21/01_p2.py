@@ -1,7 +1,7 @@
-'''--- Day 1: Sonar Sweep ---
-
---- Part Two ---
 '''
+--- Day 1: Sonar Sweep ---
+
+--- Part Two ---        '''
 
 count = 0
 with open('01.txt', 'r') as file:
