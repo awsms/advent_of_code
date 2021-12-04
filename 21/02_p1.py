@@ -1,3 +1,8 @@
+'''
+--- Day 2: Dive! ---
+
+--- Part One ---        '''
+
 import re
 
 z = []
@@ -12,7 +17,6 @@ for i in range (len(z)):
     z[i][1] = int(z[i][1])
 
 go_up,go_down,go_forward = 0,0,0
-
 
 for i, j in z:
     if i == 'up':
