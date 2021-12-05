@@ -11,19 +11,19 @@ begins_with_null = []
 begins_with_one = []
 
 with open('03.txt', 'r') as file:
-    instructions = [i for i in file.readlines()]
+    instructions = [str(n.strip()) for n in file.readlines()]
     for f in instructions:
         if re.match('^0',f):
             begins_with_null.append(f)
         else:
             begins_with_one.append(f)
 
-for i in range (len(begins_with_one)):
-    begins_with_one[i] = begins_with_one[i].strip()
-    begins_with_one[i] = str(begins_with_one[i])
-for i in range (len(begins_with_null)):
-    begins_with_null[i] = begins_with_null[i].strip()
-    begins_with_null[i] = str(begins_with_null[i])
+# for i in range (len(begins_with_one)):
+#     begins_with_one[i] = begins_with_one[i].strip()
+#     begins_with_one[i] = str(begins_with_one[i])
+# for i in range (len(begins_with_null)):
+#     begins_with_null[i] = begins_with_null[i].strip()
+#     begins_with_null[i] = str(begins_with_null[i])
 
 if (len(begins_with_one)) > (len(begins_with_null)):
     epsilon_rate = begins_with_one
