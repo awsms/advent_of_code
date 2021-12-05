@@ -12,9 +12,9 @@ with open('02.txt', 'r') as file:
     for i in instructions:
         z.append(re.split(' ', i))
 
-# for i in range (len(z)):
+for i in range (len(z)):
 #     z[i][1] = z[i][1].strip()
-#     z[i][1] = int(z[i][1])
+    z[i][1] = int(z[i][1])
 
 aim,go_down,go_forward = 0,0,0
 
